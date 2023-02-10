@@ -2,18 +2,18 @@
 /* General styles - put these straight into your stylesheet */
 
 body {
-    margin: 0;
+    margin: 0em;
   }
   
   html {
     font-family: 'Helvetica neue', Arial, 'sans serif';
-    font-size: 10px;
+    font-size: 1em;
     background-color: #ccc;
   }  
 
 /* Selectors to be matched up with rulesets */
 
-.card article img {
+.card {
     width: 35em;
     height: 22em;
     margin: 5em auto;
@@ -32,7 +32,7 @@ body {
     border-radius: 0 0 1.5em 1.5em;
 }
 
-.card {
+.card article img {
     max-height: 100%;
     float: right;
 }
@@ -45,7 +45,7 @@ body {
     content-height: 1.5em;
 }
 
-h2, p {
+.card h2, p {
     margin: 0;
 }
 
