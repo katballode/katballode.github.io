@@ -4,10 +4,12 @@ body {
   margin: 0;
 }
 
-html {
+.card {
   font-family: 'Helvetica neue', Arial, 'sans serif';
-  font-size: 1em;
-  background-color: #ccc;
+}
+
+.card2 {
+  font-family: 'Copperplate', 'Copperplate Gothic Light', sans-serif;
 }
 
 .card1 {
