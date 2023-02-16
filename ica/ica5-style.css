@@ -7,20 +7,22 @@
   }
   
   body {
-    border-top: solid 1mm red;
     margin: 0;
-    background: #ccc;
-    background: linear-gradient(grey,transparent 20%,transparent,transparent 80%,grey);
-    border-bottom: solid 1mm red;
+    background: linear-gradient(grey,white, white,white,white, white, grey);
   }
   
   article {
-    filter: drop-shadow(5px 8px 7px black);
     width: 210mm;
     height: 297mm;
     margin: 20px auto;
     position: relative;
+    border-top: 5mm solid red;
+    border-bottom: 5mm solid red;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.2em),rgba(0,0,0,0)20%, rgba(0,0,0,0)80%, rgba(0,0,0,0.2)
+    url("/img/top-image.png") no-repeat left top,
+        url("/img/bottom-image.png") no-repeat left bottom;
   }
+
   
   address {
     position: absolute;
