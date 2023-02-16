@@ -41,7 +41,7 @@
     padding: 44px 0;
     color: white;
     text-shadow: 1px 1px 1px black;
-    background: url("img/logo.png");
+    background: url("/img/logo.png");
     border-radius: 64px;
     box-shadow: 30px 30px 30px black;
   }
