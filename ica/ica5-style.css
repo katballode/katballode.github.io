@@ -18,7 +18,7 @@
     position: relative;
     border-top: 1mm solid red;
     border-bottom: 1mm solid red;
-    background: linear-gradient(grey,white, white,white,white, white, grey),
+    background: linear-gradient(grey,white, white,white,white, white, grey);
     url("/img/top-image.png") no-repeat left top,
       url("/img/bottom-image.png") no-repeat left bottom;
 }
