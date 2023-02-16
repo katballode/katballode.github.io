@@ -10,7 +10,7 @@
     border-top: solid 1mm red;
     margin: 0;
     background: #ccc;
-    background: linear-gradient(grey,transparent,transparent,transparent,transparent,grey);
+    background: linear-gradient(grey,transparent 20%,transparent,transparent 80%,grey);
     border-bottom: solid 1mm red;
   }
   
