@@ -7,20 +7,19 @@
   }
   
   body {
+    border-top: solid 1mm red;
     margin: 0;
     background: #ccc;
     background: linear-gradient(grey,transparent,transparent,transparent,transparent,grey);
+    border-bottom: solid 1mm red;
   }
   
   article {
+    filter: drop-shadow(5px 8px 7px black);
     width: 210mm;
     height: 297mm;
     margin: 20px auto;
     position: relative;
-    border-top: 1mm solid red;
-    border-bottom: 1mm solid red;
-    background: url("/img/top-image.png") no-repeat left-top,
-        url(/img/bottom-image.png) no-repeat left-bottom;
   }
   
   address {
@@ -31,8 +30,8 @@
   
   h1 {
     position: absolute;
-    top: 12mm;
-    left: 20mm;
+    top: -5mm;
+    left: 1mm;
     width: 128px;
     height: 128px;
     font-size: 20px;
@@ -41,7 +40,4 @@
     padding: 44px 0;
     color: white;
     text-shadow: 1px 1px 1px black;
-    background:url("logo.png");
-    border-radius: 64px;
-    box-shadow: 3px 3px 3px black;
   }
