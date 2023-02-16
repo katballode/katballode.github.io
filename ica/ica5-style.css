@@ -32,8 +32,8 @@
   
   h1 {
     position: absolute;
-    top: -5mm;
-    left: 1mm;
+    top: 12mm;
+    left: 20mm;
     width: 128px;
     height: 128px;
     font-size: 20px;
@@ -42,4 +42,7 @@
     padding: 44px 0;
     color: white;
     text-shadow: 1px 1px 1px black;
+    background: url("img/logo.png");
+    border-radius: 64px;
+    box-shadow: 30px 30px 30px black;
   }
