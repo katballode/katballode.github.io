@@ -12,6 +12,13 @@ body{
     position:relative;
 }
 
+
+#text1 {
+    left: 100%;
+    top: 250px;
+    position: relative;
+}
+
 #box2{
     width: 73vw;
     height: 33vh;
@@ -22,12 +29,27 @@ body{
     position:relative;
     left: 40vw;
     background-color: mediumvioletred;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+#text2 {
+    position: fixed;
+    top:27vh;
+
 }
 
 #box3{
 position: sticky;
 width: 73vw;
-height: 175vh;
+height: 100vh;
 border-radius: 10px;
 background-color: orangered;
+}
+
+#text3 {
+    position: sticky;
+    top:0;
+    font-size: 50px;
 }
