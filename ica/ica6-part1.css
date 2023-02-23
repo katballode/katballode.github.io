@@ -27,15 +27,13 @@ body{
     border-radius:3px;
     border-color:purple;
     position:relative;
-    left: 40vw;
+    left: 0vw;
+    top: 300vw;
     background-color: mediumvioletred;
-    position: fixed;
-    bottom: 0;
-    left: 0;
 }
 
 #text2 {
-    position: fixed;
+    position: absolute;
     top:27vh;
 
 }
@@ -43,7 +41,7 @@ body{
 #box3{
 position: sticky;
 width: 73vw;
-height: 100vh;
+height: 175vh;
 border-radius: 10px;
 background-color: orangered;
 }
@@ -51,5 +49,5 @@ background-color: orangered;
 #text3 {
     position: sticky;
     top:0;
-    font-size: 50px;
+    font-size: 30px;
 }
