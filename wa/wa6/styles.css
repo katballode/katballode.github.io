@@ -24,7 +24,6 @@ body {
     max-width: 980px;
     grid-template-columns: 3fr 1fr;
     display:grid;
-    margin: 1, 30px, 30px, 10;
   }
   
   nav {
