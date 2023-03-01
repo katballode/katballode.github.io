@@ -37,7 +37,7 @@ This is my repo for ATLS2200.
 - [WA4](https://katballode.github.io/wa/wa4.html)
 - [WA5](https://katballode.github.io/wa/wa5.html)
 - [WA6](https://katballode.github.io/wa/wa6/index.html)
-- WA7
+- [WA7](https://katballode.github.io/wa/wa7.html)
 - WA8
 - WA9
 - WA10
