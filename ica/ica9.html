@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>ICA 9: Interactive Elements</title>
+    <style>
+      #color-button {
+        background-color: black;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        margin-bottom: 20px;
+      }
+      #color-container {
+        display: inline-block;
+        margin: 0 auto;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ICA 9: Interactive Elements</h1>
+    <button id="color-button">Click for a new color and animal</button>
+    <div id="color-container">
+      <p id="animal-text"></p>
+    </div>
+    <script>
+      const colorButton = document.getElementById("color-button");
+      const colorContainer = document.getElementById("color-container");
+      const animalText = document.getElementById("animal-text");
+
+      const colors = ["#f00", "#0f0", "#00f", "#ff0", "#f0f", "#0ff"];
+      const animals = ["Dog", "Cat", "Fish", "Lion", "Tiger", "Elephant"];
+
+      colorButton.addEventListener("click", () => {
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+        const randomAnimal = animals[Math.floor(Math.random() * animals.length)];
+        colorContainer.style.backgroundColor = randomColor;
+        animalText.textContent = randomAnimal;
+      });
+    </script>
+  </body>
+</html>
