@@ -22,7 +22,7 @@ This is my repo for ATLS2200.
 - [ICA7](https://katballode.github.io/ica/ica7.html)
 - ICA8
 - [ICA9](https://katballode.github.io/ica/ica9.html)
-- ICA10
+- [ICA10](https://katballode.github.io/ica/ica10.html)
 - ICA11
 - ICA12
 - ICA13
