@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>JSON: Task 1</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="" />
+  </head>
+
+  <body>
+
+    <section class="preview">
+
+
+
+    </section>
+
+  </body>
+  <script>
+    const section = document.querySelector('section');
+
+    let para1 = document.createElement('p');
+    let para2 = document.createElement('p');
+    let motherInfo = 'The mother cats are called ';
+    let kittenInfo = '';
+    const requestURL = 'sample.json';
+
+    fetch(requestURL)
+    .then(response => response.text())
+    .then(text => displayCatInfo(text))
+
+    function displayCatInfo(catString) {
+      const cats = JSON.parse(catString);
+      let totalKittens = 0;
+      let totalMale = 0;
+      let totalFemale = 0;
+
+      for (let i = 0; i < cats.length; i++) {
+        motherInfo += cats[i].name;
+        if (i < cats.length - 2) {
+          motherInfo += ", ";
+        } else if (i === cats.length - 2) {
+          motherInfo += ", and ";
+        } else {
+          motherInfo += ".";
+        }
+        let numMale = 0;
+        let numFemale = 0;
+        for (let j = 0; j < cats[i].kittens.length; j++) {
+          if (cats[i].kittens[j].gender === "male") {
+            numMale++;
+            totalMale++;
+          } else {
+            numFemale++;
+            totalFemale++;
+          }
+        }
+        totalKittens += cats[i].kittens.length;
+        kittenInfo += cats[i].name + " has " + cats[i].kittens.length + " kittens, including " + numMale + " males and " + numFemale + " females. ";
+      }
+      kittenInfo += "In total, there are " + totalKittens + " kittens, including " + totalMale + " males and " + totalFemale + " females.";
+
+      para1.textContent = motherInfo;
+      para2.textContent = kittenInfo;
+
+      section.appendChild(para1);
+      section.appendChild(para2);
+    }
+  </script>
+
+</html>
