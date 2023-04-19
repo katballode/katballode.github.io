@@ -5,7 +5,7 @@ function check() {
 }
 
 function submit() {
-    alert("Your volume is now " + output.textContent);
+    alert("Your volume is now: " + output.textContent);
 }
 
 function reset() {
