@@ -2,20 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volume Changer</title>
-
-    <link rel="stylesheet" href="/wa/wa13/wa13.css">
+    <link rel="stylesheet" href="/wa/wa13/wa13/wa13.css">
 </head>
 <body>
     <div class="slidecontainer">
         <p>Please select the volume you'd like.</p>
-        <input type="range" min="0" max="100" class="slider" id="myRange">
-        <input class="slider-submit-button" type="button" name="slider-submit-button" value="SUBMIT">
-        <p class= "slider-output"></p>
+        <input type="range" min="0" max="100" value="50" class="slider" id="myRange">
+        <button class="slider-submit-button" id="submitBtn">SUBMIT</button>
+        <p class="slider-output">Volume: 50</p>
     </div>
 
-    <script defer src="/wa/wa13/wa13.js"></script>
+    <script src="/wa/wa13/wa13.js"></script>
 </body>
 </html>
