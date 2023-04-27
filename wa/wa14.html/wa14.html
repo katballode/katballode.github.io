@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>WA14: Top 10 Highest 14ers in Colorado</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+<style>
+body { margin: 0; padding: 0; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+#toggle-button { position: absolute; top: 10px; left: 10px; z-index: 1; }
+</style>
+</head>
+<body>
+<button id="toggle-button">Toggle Map Style</button>
+<div id="map"></div>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1Ijoia2F0YmFsbG9kZSIsImEiOiJjbGd3ZXBqbTQwMGF3M2VwZzhqdGkxdDQ2In0.7_-Sr3J4u0Ef1AeAz-GEPA';
+    const map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/katballode/clgyhj30x005301qz7spv11mh', // WA14 style URL
+        center: [-105.550166, 39.105485],
+        zoom: 9 // starting zoom
+    });
+
+    // Define the two map styles
+    const style1 = 'mapbox://styles/katballode/clgyhj30x005301qz7spv11mh'; // WA14 style
+    const style2 = 'mapbox://styles/katballode/clgwghzad003w01r89pqj9333'; // alternate style, street style from ICA14
+
+    // Get a reference to toggle button
+    const toggleButton = document.getElementById('toggle-button');
+
+    // Add an event listener to toggle button
+    toggleButton.addEventListener('click', () => {
+        // Toggle between the two map styles
+        if (map.getStyle().name === 'Mapbox My Style') {
+            map.setStyle(style1);
+        } else {
+            map.setStyle(style2);
+        }
+    });
+
+    function rotateMap(timestamp) {
+        const rotation = (timestamp / 240000) * 360; // 4 minutes per rotation
+
+        map.rotateTo(rotation, { duration: 0 });
+       
+        requestAnimationFrame(rotateMap);
+    }
+
+   
+    requestAnimationFrame(rotateMap);
+</script>
+</body>
+</html>
