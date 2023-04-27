@@ -44,5 +44,5 @@ This is my repo for ATLS2200.
 - [WA11](katballode.github.io/wa/assignment11.html)
 - [WA12](katballode.github.io/wa/wa12.html)
 - [WA13](https://katballode.github.io/wa/wa13/wa13.html)
-- WA14
+- [WA14](katballode.github.io/wa/wa14.html/wa14.html)
 - WA15
