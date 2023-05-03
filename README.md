@@ -6,7 +6,7 @@ This is my repo for ATLS2200.
 
 - HTML
 - CSS
-- JS
+- [JS](http://katballode.me/js-final/js-final.html)
 
 ## In-Class Assignments
 
