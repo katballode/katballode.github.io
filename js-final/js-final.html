@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Ansel Adams Editor</title>
+    <link rel="stylesheet" href="js-final.css">
+  </head>
+  <body>
+    <div id="photo-editor">
+      <div class="header">
+        <h1>Ansel Adams Editor</h1>
+        <h2>JS Final</h2>
+      </div>
+      <canvas id="canvas"></canvas>
+      <div id="controls">
+        <button id="upload-btn">Upload Image</button>
+        <button id="filter-btn">Apply Filter</button>
+        <div id="adjust-controls">
+          <div class="slider-container">
+            <label for="exposure-slider">Exposure:</label>
+            <input type="range" id="exposure-slider" min="-1" max="1" value="0" step="0.1">
+          </div>
+          <div class="slider-container">
+            <label for="contrast-slider">Contrast:</label>
+            <input type="range" id="contrast-slider" min="-1" max="1" value="0" step="0.1">
+          </div>
+        </div>
+        <button id="save-btn">Save Image</button>
+      </div>
+    </div>
+    <script src="js-final.js"></script>
+  </body>
+</html>
